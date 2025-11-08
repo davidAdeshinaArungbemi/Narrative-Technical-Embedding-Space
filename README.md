@@ -111,7 +111,7 @@ We chose triplet loss because it provides explicit control over both intra-class
 
 Our architecture consists of three main components working in concert to produce both accurate predictions and geometrically meaningful embeddings.
 
-**[ARCHITECTURE DIAGRAM PLACEHOLDER]**
+![Embedding Space Visualization](image_results/narrative_architecture.png)
 
 *The diagram should illustrate:*
 - *Input tokenization (vocab_size=10K, max_length=512)*

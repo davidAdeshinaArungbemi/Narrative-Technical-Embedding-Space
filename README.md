@@ -352,7 +352,7 @@ Final Validation Metrics:
 
 ### Learning Curves
 
-![Training History](training_history.png)
+![Training History](image_results/training_history.png)
 *Figure 1: Training dynamics across 10 epochs showing classification loss, triplet loss, and accuracy for both training and validation sets.*
 
 From the training history plots:
@@ -380,7 +380,7 @@ From the training history plots:
 
 ### Dimensionality Reduction Analysis
 
-![Embedding Space Distributions](distributions.png)
+![Embedding Space Distributions](image_results/distributions.png)
 *Figure 2: Visualization of the 64-dimensional embedding space through multiple projection methods. Top row shows UMAP and t-SNE 2D projections with clear class separation. Bottom row displays 1D distribution via PCA's first principal component and distance distributions from the story centroid.*
 
 We analyze the 64-dimensional embedding space using three complementary projection methods:
@@ -456,7 +456,7 @@ A crucial validation of our embeddings: **Can unsupervised algorithms rediscover
 
 ### HDBSCAN: Hierarchical Density-Based Clustering
 
-![HDBSCAN Clustering Results](cluster_hdbscan.png)
+![HDBSCAN Clustering Results](image_results/cluster_hdbscan.png)
 *Figure 3: HDBSCAN clustering results without labels. Left panel shows discovered clusters (2 clusters found, 0 noise points, 100% purity per cluster). Right panel shows the same space colored by true labels for comparison. Black X markers indicate cluster centers.*
 
 ```
@@ -486,7 +486,7 @@ Results:
 
 ### DBSCAN: Density-Based Clustering
 
-![DBSCAN Clustering Results](cluster_dbscan.png)
+![DBSCAN Clustering Results](image_results/cluster_dbscan.png)
 *Figure 4: DBSCAN clustering results. Left panel shows 4 discovered clusters plus noise points (gray). Right panel shows true labels. Note that discovered clusters are perfectly pure (no mixing of story/technical) despite finding more clusters than the ground truth.*
 
 ```
@@ -547,13 +547,13 @@ The centers are marked with black 'X' symbols in the visualizations, connected t
 
 To understand how the model handles novel inputs, we evaluated three carefully chosen examples:
 
-![Custom Text Evaluation - Distributions](distributions_custom.png)
+![Custom Text Evaluation - Distributions](image_results/distributions_custom.png)
 *Figure 5: Embedding space with custom test texts overlaid (orange diamonds with labels). Custom texts are projected into the 2D space using k-nearest neighbor interpolation from the validation set embeddings. Annotations show text snippets for context.*
 
-![Custom Text Evaluation - HDBSCAN](cluster_hdbscan_custom.png)
+![Custom Text Evaluation - HDBSCAN](image_results/cluster_hdbscan_custom.png)
 *Figure 6: HDBSCAN clustering with custom texts. Dashed lines connect custom texts to their nearest cluster centers, showing cluster assignment.*
 
-![Custom Text Evaluation - DBSCAN](cluster_dbscan_custom.png)
+![Custom Text Evaluation - DBSCAN](image_results/cluster_dbscan_custom.png)
 *Figure 7: DBSCAN clustering with custom texts, illustrating how the model positions novel examples relative to discovered clusters and noise regions.*
 
 ### Test Case 1: Simple Children's Story

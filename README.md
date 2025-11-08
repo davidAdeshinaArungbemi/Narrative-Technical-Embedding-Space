@@ -1,6 +1,6 @@
 # Learning Disentangled Narrative-Technical Embeddings Through Multi-Task Metric Learning
 
-![Embedding Space Visualization](distributions.png)
+![Embedding Space Visualization](image_results/distributions.png)
 
 *Can a neural network learn the fundamental difference between stories and technical writing? This visualization shows our learned 64-dimensional embedding space projected into 2D, revealing two perfectly separated clusters: narratives (red) and technical texts (blue). The model achieves 100% accuracy while producing embeddings so geometrically coherent that unsupervised clustering algorithms rediscover the boundary with near-perfect precision.*
 

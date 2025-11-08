@@ -113,14 +113,14 @@ Our architecture consists of three main components working in concert to produce
 
 ![Embedding Space Visualization](image_results/narrative_architecture.png)
 
-*The diagram should illustrate:*
+<!-- *The diagram should illustrate:*
 - *Input tokenization (vocab_size=10K, max_length=512)*
 - *Embedding layer (64-dim) + Positional Encoding*
 - *Transformer Encoder blocks (3 layers, 4 heads, 128 FFN dim)*
 - *Mean pooling over sequence (masked)*
 - *Bifurcation: embedding output → triplet loss, classification head → CE loss*
 - *Dual optimization paths flowing back through shared encoder*
-
+ -->
 ### Component Specifications
 
 #### 1. Token Embeddings with Positional Encoding

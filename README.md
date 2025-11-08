@@ -921,6 +921,6 @@ This project is licensed under the MIT License. This means you are free to use, 
 
 ---
 
-**Contact**: [Your email/contact information]
+**Contact**: [davidadeshina](https://linkedin.com/in/davidadeshina)
 
 **Project Status**: Active development towards technical-to-narrative translation system
